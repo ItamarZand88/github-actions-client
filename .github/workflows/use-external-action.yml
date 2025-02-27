@@ -1,0 +1,15 @@
+name: Use External Hello Action
+
+on: push  # ה-Workflow ירוץ בכל דחיפה
+
+jobs:
+  use-action:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Run Hello Action from External Repo
+        uses: ItamarZand88/github-actions-test/actions/hello-action@main
+        with:
+          name: "External User"
