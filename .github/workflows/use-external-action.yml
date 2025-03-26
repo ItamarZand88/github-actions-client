@@ -1,6 +1,6 @@
 name: Use External Hello Action
 
-on: push  # ה-Workflow ירוץ בכל דחיפה
+on: push # ה-Workflow ירוץ בכל דחיפה
 
 jobs:
   use-action:
@@ -12,4 +12,6 @@ jobs:
       - name: Run Hello Action from External Repo
         uses: ItamarZand88/github-actions-test/actions/hello-action@main
         with:
-          name: "External User"
+          name: "Itamar"
+          greeting_type: "Good morning"
+          language: "en" # שפה (אנגלית או ספרדית)
